@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+<body>
+    <h1>Login</h1>
+    <p>Preencha os campos abaixo para fazer login:</p>
+    <p>O primeiro formulário é vulnerável a SQL Injection, enquanto o segundo é seguro.</p> 
+    <h2>Formulário de Login Vulnerável</h2>
+    <!-- Formulário de login -->
+    <form method="POST" action="https://bug-free-space-carnival-5w79rqrqj9w3rjq-3000.app.github.dev/login-vulneravel">
+        <input name="usuario" placeholder="Usuário">
+        <input name="senha" placeholder="Senha">
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Formulário de login vulnerável -->
+    <h2>Formulário de Login Seguro</h2>
+
+    <form method="POST" action="https://bug-free-space-carnival-5w79rqrqj9w3rjq-3000.app.github.dev/login-seguro">
+        <input name="usuario" placeholder="Usuário">
+        <input name="senha" placeholder="Senha">
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
